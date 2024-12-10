@@ -10,7 +10,14 @@
 
 <header>
     <h1>Machine Learning Project</h1>
-	<p style="font-size: 0.8rem; margin-top: -10px; color: white;">By: Bryan Aguilar</p>
+    <p style="font-size: 0.8rem; margin-top: -10px; color: white;">By: Bryan Aguilar</p>
+    <!-- Embedded Links -->
+    <div class="quick-links">
+        <a href="#Scope">Scope</a>
+        <a href="#Process">Process</a>
+        <a href="#Results">Results</a>
+        <a href="#Try-Model">My Model</a>
+    </div>
 </header>
 
 <main class="content-wrap">
@@ -18,87 +25,124 @@
     <div class="text-block">
         <h2>Project Objective</h2>
         <p>
-            My project is centered on leveraging machine learning to create an image recognition model. 
-            Specifically, I set out to develop a teachable machine that can classify images into distinct categories while addressing the ethical and societal challenges that AI often presents.
-            The objective is not just to build a functional system but to reflect deeply on how biases in training data can influence the outcomes of AI models and to ensure that my work aligns with principles of fairness and inclusivity.
+            The main goal of my project is to develop an image identification model by using machine learning. 
+        	With regard to the ethical and sociological issues that AI frequently raises, my specific goal was to create a teachable machine that could categorize photos into different groups. 
+        	Building a working system is perceived as part of the goal; I also want to make sure that my work complies with fairness and inclusivity ideals and think carefully about how biases in training data can affect AI model results.
         </p>
         <p>
-            Additionally, I wanted to explore how user-friendly machine learning tools, like Google’s Teachable Machine, democratize access to AI development. 
-            By engaging with this platform, I aimed to understand how such tools can empower individuals to experiment with machine learning concepts without requiring extensive coding expertise.
+            I also wanted to investigate how accessible machine learning resources, such as Google’s Teachable Machine, democratize access to AI research. 
+        	By using this platform, I wanted to explore how these kinds of tools may enable anyone to experiment within machine learning ideas without requiring extensive coding experience.
         </p>
     </div>
 
     <!-- Project Scope -->
-    <div class="text-block">
+    <div class="text-block" id="Scope">
         <h2>Project Scope</h2>
         <p>
-            The scope of my project extended beyond traditional objects, as I aimed to explore how a machine learning model would handle a diverse and unconventional dataset. 
-            I selected everyday items such as a hat, a pair of scissors, and a shoe, as well as images of my face, to evaluate the model’s ability to differentiate between varied shapes, textures, and features.
+            My project's scope went beyond ordinary items since I wanted to investigate how a machine learning model would respond to a varied and unusual dataset. 
+        	To test the model's capacity to distinguish between a variety of shapes, textures, and features, I chose everyday items like a hat, a pair of scissors, and a shoe in addition to a picture of my face.
         </p>
         <p>
-            These objects were chosen intentionally to challenge the model: the hat for its soft, flexible structure; the scissors for their sharp, metallic appearance; the shoe for its irregular and detailed texture; and my face for its organic and dynamic nature. 
-            Each item introduced a unique classification challenge, from reflective surfaces to human features, requiring the model to learn subtle distinctions.
+            These objects were specifically chosen to test the model: my face because it is dynamic and organic; the hate because it is soft and flexible; the scissors because they are sharp and metallic; and the shoe because of its uneven and intricate texture. 
+        	The algorithm has to pick up minor differences between each item’s classification difficulty, which ranged from shiny surfaces to human features.
         </p>
         <p>
-            Training the model involved capturing multiple angles, lighting conditions, and variations of these items. For example, I took photos of the scissors open and closed, the hat folded and flat, and the shoe from both the top and the sole. 
-            Incorporating my face added complexity as I tested whether the model could generalize across expressions and slight movements.
+            In order to train the model, various lighting situations, angles, and variations of these objects have to be captured. 
+        	I photographed the hat both folded and flat, the scissors both open and closed, and the she from the top and sole, for instance. My face increased complexity as I experimented with the model;s ability to generalize across facial expressions and slight movements.
         </p>
         <p>
             The result was a machine learning model capable of accurately recognizing these objects and features, demonstrating its ability to process a variety of inputs in real-world scenarios. This unconventional approach also provided insights into the model’s limitations and areas for improvement when dealing with diverse datasets.
         </p>
 		 <!-- Added Image -->
-        <img src="ObjectiveImage.png" alt="Project Objective Illustration" style="max-width: 100%; height: auto; display: block; margin: 20px auto;">
+        <img src="ObjectiveImage1.png" alt="Project Objective Illustration" style="max-width: 100%; height: auto; display: block; margin: 20px auto;">
     </div>
+
+<!-- Ethical Considerations -->
+<div class="text-block">
+    <h2>Ethical Considerations and Joy Buolamwini's Insights</h2>
+    <p>
+        Addressing the ethical issues that are frequently connected to the development of AI was a crucial part of this effort.
+    	<i> Unmasking AI: My Mission to Protect What is Human in  a World of Machines</i> by Joy Buolomwini offered critical insight on how biases in machine learning systems affect society
+    	Buoloamwini’s work underscores how imbalanced datasets can lead to discriminatory outcomes, particularly in applications like facial recognition.
+    	According to her, “when we think about the coded gaze, we must consider how it reflects the priorities, preferences, and sometimes prejudice of its creators.” 
+    	Inspired by her research, I took deliberate steps to guarantee variety and inclusivity in my dataset, such as taking pictures from different lighting and perspectives to lessen the possibility of biases in the classification of faces and objects.
+    </p>
+    <p>
+        Early testing showed that under some lighting conditions and poor background spacing, the model first had trouble identifying the difference between the cap and the shoe, underscoring the significance of data quality
+    	To address this, I expanded the dataset with more images captured in similar environments.
+    	In addition, Buolamwini’s support of transparency inspired me to record each stage of the project, from gathering data to deploying it.
+    	This transparent method encourages responsibility in the interpretation and use of the model’s result by ensuring that users are aware of the systems limits and potential biases
+    </p>
+</div>
 
     <!-- Process -->
-    <div class="text-block">
-        <h2>Process</h2>
-        <p>
-            The process began with data collection, which involved sourcing a variety of images for the four categories: a hat, scissors, a shoe, and my face. 
-            To create a diverse dataset, I captured multiple angles of each object and my face under varying lighting conditions. 
-            My face was intentionally included as a neutral category to test the model's ability to generalize across more complex inputs.
-        </p>
-        <p>
-            During the training phase, I decided to incorporate approximately 100 images for each category, ensuring a comprehensive representation of each item. 
-            This included different perspectives, lighting, and orientations to improve the model's precision. For example, I took photos of the scissors open and closed, the hat folded and flat, and the shoe from both the top and the sole. 
-            Similarly, I used images of my face with varying expressions and slight movements to enhance the model's ability to differentiate between objects.
-        </p>
-        <p>
-            Early tests revealed some challenges. The model initially struggled to distinguish between the shoe and the hat under certain lighting conditions. 
-            To address this, I added additional images of these objects captured in similar lighting environments, which improved the model's ability to make accurate classifications.
-        </p>
-        <p>
-            Once the model achieved satisfactory accuracy, I exported it and integrated it into a web-based interface. 
-            This involved embedding the model using the tools provided by Teachable Machine and creating a simple yet intuitive interface for users to test it with their own images or webcam feeds.
-        </p>
-    </div>
+ <div class="text-block" id="Process">
+    <h2>Process</h2>
+    <p>
+        Data gathering was the first step of the process, which entailed finding a range of pictures for the four categories–my face, a hat, scissors, and a shoe.
+    	I took pictures of my face and every object from several perspectives in different lighting settings in order to produce a varied dataset.
+		In order to evaluate the models generalization skills across increasingly complicated inputs, my face was purposefully included as a neutral category
 
-    <!-- Lessons Learned -->
-    <div class="text-block">
-        <h2>Lessons Learned</h2>
-        <p>
-            Working on this project offered me invaluable insights into the complexities of machine learning. 
-            One of the key lessons was the importance of data quality and diversity. 
-            Even small biases in the dataset had noticeable effects on the model’s predictions, underscoring how crucial it is to evaluate training data critically.
-        </p>
-        <p>
-            Another significant takeaway was the role of transparency in AI development. 
-            By documenting every step of the process—data collection, training, testing, and deployment—I ensured that anyone examining the project could understand its limitations and how decisions were made.
-        </p>
-        <p>
-            Lastly, I learned the importance of user-centric design in AI. 
-            It wasn’t enough to build a working model; I had to consider how users would interact with it, test its outputs, and understand its potential errors. 
-            This reinforced the idea that machine learning projects are not just technical endeavors but also deeply human ones.
-        </p>
+    </p>
+    <p>
+        In order to ensure a thorough depiction of every item, I made the decision to include roughly 100 photographs fir each category during the training phase.
+    	To increase the accuracy of the model, various viewpoints, lighting conditions, and orientations were used. For instance, I snapped pictures of the shoe from top and sole, the cap folded and flat, and the scissors closed.
+    	To improve the model’s capacity to distinguish items, I also included pictures of my face with different expressions and small movements.
+
+    </p>
+    <p>
+        To further enhance the accuracy and precision of the model, I added more variations of the items in the dataset.
+    	These consisted of variously colored scissors, shoes, and hats, each with its own distinct form and shape. I intended to push the model to identify minute differences and enhance its capacity to generalize across a larger range of real-world situations by presenting a more diverse spectrum of visuals.
+
+    </p>
+    <p>
+         Initial testing showed several difficulties. At first, in some lighting situations, the model had trouble telling the difference between the cap and the shoe.
+    	To solve this problem, I included more pictures of these items taken in comparable lightings conditions, which enhanced the models classification accuracy.
+
+    </p>
+    <p>
+        After the model's accuracy achieved satisfactory accuracy, I exported it into a web-based interface.
+    	To do this, the model had to be embedded using Teachable Machine’s tools, and a straightforward yet user-friendly interface had to be made so that users could test it using their own photos or webcam feeds.
+
+    </p>
+ 	<!-- Added Image -->
+        <img src="Integrations.png" alt="Objects Used for Model" style="max-width: 100%; height: auto; display: block; margin: 20px auto;">
+</div>
+
+<!-- Lessons Learned -->
+<div class="text-block">
+	<h2>Lessons Learned</h2>
+    <p>
+        Working on this project, I learned so much about the intricacies of machine learning from working on this project, especially as it relates to bias and inclusivity
+    	I learned how unbalanced datasets can reinforce societal disparities in AI systems by reading Joy Buolamwini’s <i>Unmasking AI: My Mission to Protect What is Human in a WOrld of Machines</i>.
+    	For instance, she found that a lack of diverse training data causes facial recognition systems to frequently misidentified people with darker skin tones.
+    	Inspired by this, I purposefully took an effort to make sure my dataset contained a range of things, such as hats and scissors, in various colors, shapes, and forms.
+    </p>
+    <p>
+        Buolamwini’s support of responsibility and transparency in AI also influenced how I documented the research. 
+    	As she argues, “transparency in AI systems is not just an ethical ideal— it is a necessity.” To make sure that my work could be critically reviewed by others, I recorded every step of the process, from data gathering to model testing.
+    	This degree of transparency enabled me to consider the possible societal effects of my approach and helped me pinpoint opportunities for development
+    </p>
+	<p>
+    	Additionally, I was able to comprehend the wider cultural challenges in tech thanks to Ellen Pao’s <i> Tech Heal Thyself</i>. She mentions "diversity and inclusion are not optional–they are necessary to create better technology.”
+    	This viewpoint strengthened my resolve to give equity and diversity top priority during the project    
+	</p>
+
+    <p>
+        Last but not least, Buolamwinin’s focus on the social repercussions of biased AI forced me to look beyond its technological capabilities.
+    	Training a model to recognize things was insufficient; I also had to think about how the model may function with a variety of users in real-world situations.
+    	The significance of creating AI systems that are not only functional but also equitable, moral, and inclusive was emphasized by this research.
+
+    </p>
     </div>
 
     <!-- Video -->
     <div class="text-block">
         <h2>Video</h2>
         <p>
-            As part of my learning process, I engaged with various resources, including tutorials and lectures on machine learning. 
-            One of the most impactful videos I encountered was a tutorial on using Teachable Machine, which provided a clear and accessible introduction to building custom models. 
-            You can watch it below to understand the basics of this tool:
+            I used a variety of material to aid in my study, such as machine learning courses and tutorials. 
+        	One of the most influential videos I saw was Teachable Machine, which provided me with instructions that gave a concise and understandable overview of creating custom models. 
+        	You can view it below to learn more about the fundamentals of this tool:
         </p>
         <iframe width="560" height="315" 
                 src="https://www.youtube.com/embed/kwcillcWOg0" 
@@ -110,16 +154,25 @@
     </div>
 
      <!-- Try the Model -->
-    <div class="text-block">
+    <div class="text-block" id="Results">
         <h2>My Results</h2>
-        <p>
-            I’m excited to share the results of my project with you. By clicking the button below, you can access the teachable machine model I developed. 
-            With a webcam and images of a hat, scissors, a shoe, and my face, you can test the model’s accuracy and see machine learning in action.
-        </p>
-        <p>
-            This interactive experience not only demonstrates the technical capabilities of the model but also highlights the importance of understanding AI’s strengths and limitations. 
-            I hope it inspires you to explore the possibilities of machine learning in your own projects.
-        </p>
+         <p>
+        I’m excited to share the results of my project with you. Through an iterative process, I significantly improved my teachable machine model by diversifying the dataset for each class. 
+        For example, I re-created and added a variety of elements into each category—such as hats, scissors, and shoes of different colors, shapes, and materials. 
+        This ensured that the model could better generalize across real-world scenarios and accurately classify objects regardless of their specific characteristics.
+    </p>
+    <p>
+        Beyond improving the machine learning model itself, I enhanced the overall presentation of my project. I added a navigation menu at the top of the page, allowing users to quickly access key sections such as Scope, Process, Results, and My Model. 
+        This makes the website more user-friendly and ensures that viewers can seamlessly explore my work.
+    </p>
+    <p>
+        Additionally, I deepened my reflection on ethical considerations by incorporating insights from Joy Buolamwini’s <i>Unmasking AI: My Mission to Protect What Is Human in a World of Machines</i>. 
+        Her work on mitigating bias in AI systems directly influenced my approach to diversifying the dataset and documenting my process transparently. 
+        This project reaffirmed the importance of ensuring that machine learning models are fair, inclusive, and adaptable to a wide range of users.
+    </p>
+    <p>
+        By clicking the button below, you can access the teachable machine model I developed. With a webcam and images of a hat, scissors, a shoe, and my face, you can test the model’s accuracy and see machine learning in action.
+    </p>
         <iframe width="560" height="315" 
             src="https://www.youtube.com/embed/35WqPHfSI4o" 
             title="YouTube video player" 
@@ -131,11 +184,11 @@
     </div>
 
     <!-- Try My Model! -->
-    <div class="text-block">
+    <div class="text-block" id="Try-Model">
         <h2>Try My Model!</h2>
         <p>
-            This block provides access to the interactive model where you can test the machine learning system. 
-            The system classifies objects such as a hat, scissors, a shoe, and my face. Click the button below to interact with the model in real-time.
+            You can test the machine learning system using the interactive model that is accessible through this block. 
+        	Items like a hat, scissors, a shoe, and my face are all classified by the algorithm. To engage with the model in real time, click the link below.
         </p>
         <a href="interactivemodel.html" target="_blank" class="button">Interactive Model</a>
     </div>
